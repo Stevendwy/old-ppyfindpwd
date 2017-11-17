@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+	<head id="Head1" runat="server">
+    <title>零零汽-专业汽配查询平台</title>
+    <link rel="shortcut icon" href="/ppy/img/logo.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="dns-prefetch" href="//qmdb.crmren.com">
+    <link rel="apple-touch-icon-precomposed" href="http://007vin.com/ppy/img/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="零零汽" />
+    <meta name="keywords" content="零零汽" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="http://007vin.com/ppy/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://007vin.com/ppy/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="http://007vin.com/ppy/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/ppy/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/ppy/css/newNav.css" />
+    <link rel="stylesheet" type="text/css" href="/ppy/css/new.css"/>
+    <!--[if lt IE 9]>
+    <script src="http://007vin.com/ppy/js/html5shiv.min.js"></script>
+    <script src="http://007vin.com/ppy/js/respond.min.js"></script>
+    <script src="/ppy/js/html5shiv.min.js"></script>
+    <script src="/ppy/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <script src="http://007vin.com/ppy/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="http://007vin.com/ppy/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?05e21600fc9a2fed6a3083dc789817bd";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--[if lt IE 9]>
+	    <style type="text/css">
+	    	.lcontent{background:#F8F8FF}
+	    	.bottomcop{
+	    		float: left;
+		    margin-left: 50%;
+		    transform: translateX(-50%);
+	    	}
+	    </style>
+    <![endif]-->
+    <style type="text/css">
+    	 .lbody{
+    		background-image: url(/ppy/img/p_bannerbg.jpg);
+    		background-repeat:repeat-x;
+    }
+    	 .lbody>img{width: auto;}
+    	 .bannermindex{
+    	 	position: absolute;
+	    left: 10%;
+	    top: 20%;
+    	 }
+    </style>
+</head>
+<body>
+    <div id="beforeshow"></div>
+    <!--head-->
+    <div id="navbar" class="navbar" style="padding-top: 5px;padding-bottom: 5px;">
+        <div class="navbar-container col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2">
+            <div class="navbar-header">
+                <img class="logoindex" src="/ppy/img/logo2.png" alt=""  width="110" />
+            </div>
+            <div class="navbar-buttons navbar-header pull-right" role="navigation">
+                <!--<a href="/register" class="btn btn-default btn-sm" style="margin-right: 5px;">注册</a>-->
+                <a href="/login" class="btn btn-primary btn-sm">登录</a>
+            </div>
+        </div>
+    </div>
+		<div class="lbody" style="height: 568px;">
+			<img class="bannermindex" src="/ppy/img/Pay/p_bannermindex.png"/>
+			<div class="lcontent" style="width: 482px;">
+				<div class="lcenterhead" style="background-color: #76BBFF;border-radius: 4px;">
+					<div class="loginhl">VIN车架号查询</div>
+					<div class="loginhr" style="cursor:pointer;"> 车型查询</div>
+					<div class="loginhr1" style="cursor:pointer;"> 零件号查询</div>
+				</div>
+				<div class="lcenterinput">
+					<input id="vin" name="vin" class="loginvin" type="text" autocomplete="on" placeholder="请输入17位车架号">
+					<div id="search" class="loginsearch" style="cursor:pointer;">
+						查询
+					</div>
+				</div>
+				<img class="bannerword" src="/ppy/img/Pay/p_bannerword.png" />
+			</div>
+		</div>
+		<!--footer-->
+		<!--<div class="col-sm-8 col-sm-offset-3 col-xs-8 col-xs-offset-3" style="margin-top: 10px;margin-bottom: 20px;">
+			<div class="text-left col-sm-12 col-xs-12" style="padding: 0px;">
+				<span class="footerlogo">零零汽覆盖品牌</span>
+				<img src="/ppy/img/Pay/footlogo.png" alt="" />
+			</div>
+		</div>-->
+		<div class="carcenter" style="text-align: center;clear: both;background-color: rgb(246,246,246);">
+	    	<div style="margin-bottom: 20px;padding: 40px 0 0 0;">
+	    		<span class="footerlogo">零零汽覆盖品牌</span>
+			<img src="/ppy/img/Pay/footlogo.png" alt="" />
+	    	</div>   				
+    </div>
+		<div class="clearfix">
+		</div>
+        <footer class="footerbottom bs-docs-footer">
+        <div class="footercont">
+            <ul class="footerbot">
+                <li>用户协议</li>
+                <li> | </li>
+                <li>免责声明</li>
+            </ul>
+        </div>
+        <span>Copyright 2016 All Rights Reserved</span>
+    </footer>
+	</body>
+
+</html>
+<script type="text/javascript">
+    $(document).on("click",".logoindex",function(){
+        window.location.href = "/ppy?_t=vin";
+    })
+    $(document).on("click",".loginvin",function(){
+        window.location.href = "/ppy?_t=vin";
+    })
+    $(document).ready(function () {
+		$("#beforeshow").hide();
+        // ulMenuCg();
+
+        $(".ulCar li").click(function () {
+            $(".ulCar .sl").removeClass("sl");
+            $(this).addClass("sl");
+        });
+		
+        $("#search").click(function() {
+            window.location.href="/login";
+        });
+        $(".loginhr").click(function() {
+            window.location.href="/login";
+        });
+        $(".loginhr1").click(function() {
+            window.location.href="/login";
+        });
+		
+		// //适应代码
+  //       if ($("body").height() < $(window).height()) {
+  //           $("footer").addClass("ft");
+  //       };
+    });
+
+    // function ulMenuCg() {
+    //     $("#ulMenu li").click(function () {
+    //         var val = $(this).html();
+    //         switch (val) {
+    //             case "VIN车架号查询":
+    //                 $("#ulMenu li:last").attr("class", "col-sm-4");
+    //                 $("#ulMenu li:first").attr("class", "col-sm-8 sl");
+    //                 $("#dvSearch").show();
+    //                 $("#dvCarMode").hide();
+    //                 break;
+    //             case "车型查询":
+    //                 $("#ulMenu li:first").attr("class", "col-sm-4");
+    //                 $("#ulMenu li:last").attr("class", "col-sm-8 sl");
+    //                 $("#dvSearch").hide();
+    //                 $("#dvCarMode").show();
+    //                 break;
+    //         }
+    //     });
+    // }
+</script>

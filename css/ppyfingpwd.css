@@ -1,0 +1,90 @@
+/*head*/
+.Atophead,.AtopNav{
+	background-color: #165089;
+    width: 100%;
+    height: 44px;
+}
+.Atopheadimg{
+	margin-top: 9px;
+    height: 27px;
+    left: 10%;
+	position: relative;
+}
+.AtopNav{
+	background: #fff;
+}
+.AtopNavUl li {
+	display: list-item;
+    list-style: none;
+    float: left;
+    margin-top: 6px;
+    line-height: 33px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    left: 10%;
+	position: relative;
+}
+.AtopNavUl li img{
+	margin: 0 10px;
+    vertical-align: middle;
+}
+.AtopNavUl li a {
+	font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+    text-decoration: none;
+}
+.AtopNavBorder{
+	border-bottom: 4px solid #00C7FF;
+    border-radius: 2px;
+}
+/*headend*/
+/*middle*/
+.Bmiddle{
+	  
+}
+.BmiddleHead{    
+    background: url(../img/p_banner3.png) no-repeat;
+    width: 100%;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    vertical-align: middle;
+}
+.BmiddleHead span{
+	font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #fff;
+}
+
+/*middleend*/
+
+/*bottom*/
+.BottomContainer {
+	text-align: center;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(63, 67, 66);
+	font-size: 14px;
+}
+
+.BottomContainer span {
+	color: white;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.BottomContainer img {
+	position: relative;
+	top: 4px;
+}
+
+.BottomContainer div {
+	position: relative;
+	margin-top: 10px;
+	color: white;
+}
+/*bottomend*/
